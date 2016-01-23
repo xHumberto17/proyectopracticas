@@ -15,7 +15,7 @@ var gen = $("#genero").val();
 var thmb = $("#thumbnail").val();
 
 if(can==0 || aut==0 || alb==0 || gen==0 || thmb==0)
-alert("Es necesario que llene todas las casillas.");
+alert("Es necesario que llene las casillas.");
 else{
 
 $.post( "save_cancion.php", { can: can, aut: aut, alb: alb, gen: gen, thmb: thmb})
